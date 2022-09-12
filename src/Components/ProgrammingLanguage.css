@@ -12,3 +12,12 @@ h1 {
   text-align: center;
   color: green;
 }
+.btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 10px;
+}

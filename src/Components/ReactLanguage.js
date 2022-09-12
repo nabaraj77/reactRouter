@@ -1,7 +1,12 @@
 import React from "react";
+import { useState } from "react";
 import "./ReactLanguage.css";
 
 const ReactLanguage = () => {
+  const [initialData, setInitialData] = useState("Hello");
+  const goToReactPage = () => {
+    setInitialData("You Double Clicked Me");
+  };
   return (
     <>
       <div className="main-one">
@@ -33,6 +38,9 @@ const ReactLanguage = () => {
         </p>
         <br />
       </div>
+      <button onDoubleClick={goToReactPage}>
+        Double Click Me: {initialData}
+      </button>
     </>
   );
 };

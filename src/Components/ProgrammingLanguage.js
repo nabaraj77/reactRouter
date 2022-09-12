@@ -1,7 +1,14 @@
 import React from "react";
+import { useState } from "react";
 import "./ProgrammingLanguage.css";
 
 const ProgrammingLanguage = () => {
+  const [bg, setBg] = useState("green");
+
+  const changeColor = () => {
+    setBg("pink");
+  };
+
   return (
     <>
       <div className="image-section">
@@ -37,6 +44,11 @@ const ProgrammingLanguage = () => {
         </div>
       </div>
       <hr />
+      <div style={{ backgroundColor: bg, height: 100 }} className="btn">
+        <button onClick={changeColor}>
+          Click Me to change the background color.
+        </button>
+      </div>
     </>
   );
 };

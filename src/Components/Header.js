@@ -3,11 +3,10 @@ import "./Header.css";
 import { Link, Routes, Route } from "react-router-dom";
 import ProgrammingLanguage from "./ProgrammingLanguage";
 import ReactLanguage from "./ReactLanguage";
-import HtmlLanguage from "./HtmlLanguage";
 import AboutUs from "./About/AboutUs";
 import Address from "./About/Address";
 import Phone from "./About/Phone";
-
+import User from "./User";
 const Header = () => {
   return (
     <>
@@ -19,22 +18,25 @@ const Header = () => {
           <li>
             <Link to="React">React</Link>
           </li>
-          <li>
-            <Link to="HTML">HTML</Link>
-          </li>
+
           <li>
             <Link to="About">About</Link>
+          </li>
+          <li>
+            <Link to="User">User</Link>
           </li>
         </ul>
       </div>
       <Routes>
         <Route path="ProgrammingLanguage" element={<ProgrammingLanguage />} />
         <Route path="React" element={<ReactLanguage />} />
-        <Route path="HTML" element={<HtmlLanguage />} />
+
         <Route path="About" element={<AboutUs />}>
-          <Route path="Address" element={Address} />
-          <Route path="Phone" element={Phone} />
+          <Route path="Address" element={<Address />} />
+          <Route path="Phone" element={<Phone />} />
         </Route>
+        {/* Dynamic route exapme for user */}
+        <Route path="User/:name" element={<User />} />
       </Routes>
     </>
   );
