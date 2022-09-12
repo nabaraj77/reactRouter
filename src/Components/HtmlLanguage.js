@@ -1,11 +1,11 @@
 import React from "react";
-import "./Main1.css";
+import "./HtmlLanguage.css";
 
-const Main1 = () => {
+const Html = () => {
   return (
     <>
       <div className="main-one">
-        <h2>Topic 1</h2>
+        <h2>About HTML</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
           blanditiis nam aliquam reiciendis exercitationem maxime saepe sequi
@@ -32,13 +32,9 @@ const Main1 = () => {
           reprehenderit alias fugit! Quibusdam, dolores quam?
         </p>
         <br />
-
-        <p>
-          Declarative views make your code more predictable and easier to debug.
-        </p>
       </div>
     </>
   );
 };
 
-export default Main1;
+export default Html;

@@ -1,7 +1,7 @@
 import React from "react";
-import "./Image.css";
+import "./ProgrammingLanguage.css";
 
-const Image = () => {
+const ProgrammingLanguage = () => {
   return (
     <>
       <div className="image-section">
@@ -41,4 +41,4 @@ const Image = () => {
   );
 };
 
-export default Image;
+export default ProgrammingLanguage;
