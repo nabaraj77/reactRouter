@@ -1,0 +1,14 @@
+.image-section {
+  display: flex;
+  padding-bottom: 10px;
+}
+.des {
+  line-height: 1.5;
+}
+.image-section {
+  padding-top: 10px;
+}
+h1 {
+  text-align: center;
+  color: green;
+}
